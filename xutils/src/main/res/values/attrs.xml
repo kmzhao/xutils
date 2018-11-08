@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleViewAttr">
+        <attr name="title_titleText" format="string" />
+        <attr name="title_backVisible" format="boolean" />
+        <attr name="title_moreVisible" format="boolean" />
+        <attr name="title_confirmVisible" format="boolean"></attr>
+        <attr name="title_titleMore" format="string" />
+        <attr name="title_confirmText" format="string"></attr>
+    </declare-styleable>
+</resources>

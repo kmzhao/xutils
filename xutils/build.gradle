@@ -29,7 +29,7 @@ def libName = "xutils"
 
 group = "com.ms"
 // 版本号，下次更新是只需要更改版本号即可
-version = "1.0.0"
+version = "1.0.2"
 
 //生成源文件
 task sourcesJar(type: Jar) {

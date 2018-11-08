@@ -1,12 +1,13 @@
 package com.anky.utils;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.anky.xutils.TUtils;
+import com.anky.xutils.DialogUtils;
 import com.anky.xutils.recycler.MultiItemTypeAdapter;
 
 import java.util.ArrayList;
@@ -30,7 +31,20 @@ public class MainActivity extends AppCompatActivity {
         adapter.setOnItemClickListener(new MultiItemTypeAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, RecyclerView.ViewHolder holder, int position) {
-                TUtils.show("hello");
+//                DialogUtils.showDialog(MainActivity.this,"helo","标题");
+                DialogUtils.showDialog(MainActivity.this, "取消咯", "确定取消咯", "OK",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        },
+                        "cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        });
             }
         });
     }
