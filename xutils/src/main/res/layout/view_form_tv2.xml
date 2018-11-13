@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp"
+        android:paddingTop="13dp">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_must"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:text="*"
+                android:textSize="14sp"
+                android:textColor="@color/red"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/FormTitle"
+                android:layout_toRightOf="@id/tv_must"
+                android:text="处理意见"
+                android:textSize="14sp"/>
+
+            <TextView style="@style/FormTitle"
+                android:text=" :  "/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/btn_clear"
+            android:layout_toRightOf="@+id/ll"
+            android:background="@drawable/shape_form_edit"
+            android:hint="点击选择下一节点"
+            android:minLines="2"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textColor="#6d6d72"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="50dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/shape_btn"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="清除"
+            android:textColor="#1b82d1"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="#e0e0e0"/>
+</LinearLayout>

@@ -8,4 +8,33 @@
         <attr name="title_titleMore" format="string" />
         <attr name="title_confirmText" format="string"></attr>
     </declare-styleable>
+
+    <declare-styleable name="XMenuLayout">
+        <attr name="xmenu_swipeEnable" format="boolean"/>
+        <attr name="xmenu_ios" format="boolean"/>
+        <attr name="xmenu_leftSwipe" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="FormEtAttr">
+        <attr name="fettitle" format="string" />
+        <attr name="fetmust" format="boolean" />
+        <attr name="fetcontent" format="string" />
+        <attr name="fethint" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="FormTvAttr">
+        <attr name="ftvtitle" format="string" />
+        <attr name="ftvmust" format="boolean" />
+        <attr name="ftvcontent" format="string" />
+        <attr name="ftvhint" format="string" />
+        <attr name="ftvclear" format="boolean" />
+        <attr name="ftvcolor" format="reference|integer|color" />
+    </declare-styleable>
+    <declare-styleable name="FormItAttr">
+        <attr name="fittitle" format="string" />
+        <attr name="fitmust" format="boolean" />
+        <attr name="fitcontent" format="string" />
+        <attr name="fithint" format="string" />
+    </declare-styleable>
 </resources>

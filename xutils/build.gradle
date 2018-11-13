@@ -14,6 +14,7 @@ android {
 dependencies {
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 }
 
 apply plugin: 'com.github.dcendents.android-maven'
@@ -29,7 +30,7 @@ def libName = "xutils"
 
 group = "com.ms"
 // 版本号，下次更新是只需要更改版本号即可
-version = "1.0.2"
+version = "1.0.3"
 
 //生成源文件
 task sourcesJar(type: Jar) {

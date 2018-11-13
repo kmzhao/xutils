@@ -25,13 +25,12 @@ public class MainActivity extends AppCompatActivity {
         }
         RecyclerView recyclerView=findViewById(R.id.recycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        MyAdapter adapter = new MyAdapter(this, datas);
+        final MyAdapter adapter = new MyAdapter(this, datas);
         recyclerView.setAdapter(adapter);
 
         adapter.setOnItemClickListener(new MultiItemTypeAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, RecyclerView.ViewHolder holder, int position) {
-//                DialogUtils.showDialog(MainActivity.this,"helo","标题");
                 DialogUtils.showDialog(MainActivity.this, "取消咯", "确定取消咯", "OK",
                         new DialogInterface.OnClickListener() {
                             @Override

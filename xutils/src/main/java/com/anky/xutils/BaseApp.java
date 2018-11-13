@@ -15,6 +15,7 @@ public class BaseApp extends Application {
     public void onCreate() {
         super.onCreate();
         mInstance = this;
+        Utils.init(this);
     }
 
     public static BaseApp getInstance() {
